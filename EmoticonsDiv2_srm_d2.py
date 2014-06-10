@@ -1,6 +1,13 @@
 class EmoticonsDiv2(object):
+	"""
+	TC SRM 612 D2 L2
+	http://community.topcoder.com/stat?c=problem_statement&pm=13041
+	"""
 
 	def printSmiles(self, smiles, count=0):
+		"""
+		Recursively return sum of smallest factors of smiles
+		"""
 		if smiles == 1:
 			return count
 		factor = 0
